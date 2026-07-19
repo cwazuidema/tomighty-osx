@@ -5,11 +5,13 @@ from the command line.
 
 ## Running
 
-Simply run build.sh from the build directory. Build artifacts should appear in the `target`
+Simply run `build.sh` from the `build` directory. Build artifacts should appear in the `target`
 directory. Existing build artifacts must be deleted before running again.
 
+The app target is now configured for `arm64` only and uses a macOS 11.0 minimum deployment target.
+
 ## Packaging
-* Update package.sh to change the VERSION variable to the correct version.
+* Update `package.sh` to change the `VERSION` variable to the correct version.
 * Run package.sh. Tomighty-VERSION.dmg will be created in the folder `target`
 
 ## Other Notes
